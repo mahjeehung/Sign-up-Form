@@ -9,12 +9,14 @@
 
 body {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    height: 100%;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
 }
 
 .background {
     display: grid;
+    grid-row: 1 / 4;
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     width: 300px;
@@ -29,4 +31,23 @@ body {
     margin: auto;
     color: white;
     font: 75px norsebold;
+}
+
+.right {
+    display: inline-block;
+}
+
+.intro {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.form {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.submit {
+    grid-column: 2 / 3;
+    grid-row: 3;
 }
