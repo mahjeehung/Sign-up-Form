@@ -17,10 +17,26 @@
                 You <i>know</i> you want it.
                 </p>
             </div>
-            <div class="form">Let's do this!
+            <div class="form">Let's do this! <br><br>
                 <form action="submit.html" method="post">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Thor" required>
+                    <div class="flex">
+                        <div class="submit1">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Thor" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="abc@email.com">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" placeholder="abcABC123!@#">
+                        </div>
+                        <div class="submit2">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Odinson" required>
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="12345678">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="abcABC123!@#">
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="submit">a</div>

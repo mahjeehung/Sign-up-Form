@@ -68,3 +68,20 @@ body {
     padding: 30px;
     background-color: rgb(246, 246, 246);
 }
+
+.flex {
+    display: flex;
+}
+
+.submit1, .submit2 {
+    width: 400px;
+    padding-right: 10%;
+}
+
+label, input {
+    width: 100%;
+}
+
+input {
+    margin: 0 30px 30px 0 ;
+}
