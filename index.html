@@ -14,31 +14,37 @@
         
             <div class="intro">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut sed porro tenetur, minus libero quaerat, hic nemo assumenda sunt est nobis! Reprehenderit non deleniti incidunt praesentium eius, impedit eligendi necessitatibus! <br><br>
-                You <i>know</i> you want it.
+                You <em>know</em> you want it.
                 </p>
             </div>
-            <div class="form">Let's do this! <br><br>
+            <div class="form"><span class="bigger">Let's do this!</span> <br><br>
                 <form action="submit.html" method="post">
                     <div class="flex">
-                        <div class="submit1">
+                        <div class="fillIn1">
                             <label for="firstName">FIRST NAME</label>
                             <input type="text" id="firstName" name="firstName" placeholder="Thor" required>
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" placeholder="abc@email.com">
+                            <input type="email" id="email" name="email" placeholder="abc@email.com" required>
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" placeholder="abcABC123!@#">
+                            <input type="password" id="password" name="password" placeholder="abcABC123" required pattern="\D+\d+">
                         </div>
-                        <div class="submit2">
+                        <div class="fillIn2">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Odinson" required>
+                            <input type="text" id="lastName" name="lastName" placeholder="Odinson">
                             <label for="phoneNumber">PHONE NUMBER</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="12345678">
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="12345678" pattern="\d+">
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="abcABC123!@#">
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="abcABC123" required>
                         </div>
                     </div>
-                </form>
+                
             </div>
-            <div class="submit">a</div>
+            <div class="submit">
+                <button type="submit">Create account</button>
+                <br><br>
+                <p>Already have an account? <a href="logIn.html">Log in</a></p>
+            </div>
+                
+
 </body>
 </html>

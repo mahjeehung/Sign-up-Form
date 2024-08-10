@@ -9,9 +9,14 @@
 *{
     margin: 0;
 }
+
+html{
+    background-color: black;
+    padding: 0 25px;
+}
 body {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 400px 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100vh;
 }
@@ -21,13 +26,13 @@ body {
     grid-row: 1 / 4;
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-    width: 300px;
-    height: 100vh;
+    width: 400px;
+    height: 100%;
     text-align: center;
 }
 
 .background p {
-    width: 300px;
+    width: 400px;
     padding: 10px 0px;
     background: rgba(6, 6, 6, 0.3);
     margin: auto;
@@ -47,19 +52,18 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     background-color: rgb(246, 246, 246);
+    font-weight: bold;
 }
-
-/* .intro p {
-    vertical-align: bottom;
-    width: 100%;
-    height: 100%;
-} */
 
 .form {
     grid-column: 2 / 3;
     grid-row: 2;
     padding: 30px;
+    background-color: white;
+}
 
+.bigger {
+    font-size: 30px;
 }
 
 .submit {
@@ -73,7 +77,7 @@ body {
     display: flex;
 }
 
-.submit1, .submit2 {
+.fillIn1, .fillIn2 {
     width: 400px;
     padding-right: 10%;
 }
@@ -84,4 +88,22 @@ label, input {
 
 input {
     margin: 0 30px 30px 0 ;
+}
+
+input:invalid {
+    outline: 1px solid red;
+}
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 3px 3px black;
+}
+
+button {
+    background-color: rgb(34, 121, 20);
+    color: white;
+    font-size: 20px;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 5px;
 }
