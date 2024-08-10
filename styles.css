@@ -8,6 +8,7 @@
 
 *{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html{
@@ -97,6 +98,23 @@ input:invalid {
 input:focus {
     outline: 1px solid blue;
     box-shadow: 3px 3px black;
+}
+
+input + span {
+    position: relative;
+  }
+  
+input[id="password"]:focus + span:after,
+input[id="confirmPassword"]:focus + span:after {
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+    position: absolute;
+    content: "format: alphabets followed by numbers";
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    top: -30px;
+    left: 90px;
 }
 
 button {
